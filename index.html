@@ -572,7 +572,7 @@
             margin: 0 auto;
             min-height: 100%;
             position: relative;
-            top: var(--wix-ads-top-height)
+            // top: var(--wix-ads-top-height)
         }
 
         #site-root img:not([src]) {
@@ -6561,7 +6561,7 @@
                 --font_9: normal normal normal 14px/1.4em madefor-text-mediumbold, helveticaneuew01-45ligh, helveticaneuew02-45ligh, helveticaneuew10-45ligh, sans-serif;
                 --font_10: normal normal normal 12px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
                 --wix-ads-height: 50px;
-                --wix-ads-top-height: 50px;
+                --wix-ads-top-height: 0px;
                 --site-width: 980px;
                 --above-all-z-index: 100000;
                 --portals-z-index: 100001;
@@ -11069,6 +11069,16 @@
                     --maxViewportSize: 750
                 }
             }
+
+            #inneriframe {
+                opacity: 0.001;
+                position: absolute;
+                top: 170px;
+                left: 230px;
+                width: 1520px;
+                height: 800px;
+
+            }
         </style>
     </pages-css>
 
@@ -11076,16 +11086,6 @@
         <div id="main_MF" class="main_MF">
             <div id="SCROLL_TO_TOP" class="Vd6aQZ ignore-focus SCROLL_TO_TOP" tabindex="-1" role="region"
                 aria-label="top of page"><span class="mHZSwn">top of page</span></div>
-            <div id="WIX_ADS" class="WIX_ADS Uhp3Ux NnPibr"><a data-testid="linkElement"
-                    href="//editorx.com?utm_campaign=vir_editorx_wixad_live" target="_blank" rel="nofollow"
-                    class="odPa7O"><span class="rzI5_V">Created on <svg class="BIbtE1 NnPibr" width="57" height="12"
-                            viewBox="0 0 57 12" role="img" aria-label="Editor X">
-                            <g fill-rule="evenodd">
-                                <path
-                                    d="M0 .421L0 10.421 7.034 10.421 7.034 8.827 1.887 8.827 1.887 6.156 6.769 6.156 6.769 4.561 1.887 4.561 1.887 2.016 7.034 2.016 7.034.421zM10.42 6.897c0 .643.188 1.172.566 1.587.378.415.874.622 1.49.622.448 0 .844-.111 1.19-.335.344-.225.586-.522.726-.895v-.923c0-.691-.187-1.24-.559-1.644-.373-.406-.849-.608-1.428-.608-.596 0-1.076.207-1.44.622-.363.415-.545.939-.545 1.574zm5.82 3.524h-1.833v-.895c-.243.346-.567.617-.973.818-.406.2-.874.3-1.405.3-.653 0-1.245-.158-1.777-.475-.53-.316-.956-.757-1.273-1.322-.317-.563-.476-1.214-.476-1.95 0-.737.16-1.386.476-1.944.317-.56.742-.998 1.273-1.315.532-.318 1.12-.476 1.762-.476.541 0 1.012.104 1.413.314.401.21.723.492.965.847V.35h1.847v10.07zM18.14 10.421h1.847V3.385H18.14v7.036zm.924-8.253c-.317 0-.583-.104-.797-.314-.215-.21-.322-.464-.322-.763 0-.308.107-.566.322-.776.214-.209.48-.315.797-.315.317 0 .582.106.797.315.214.21.322.468.322.776 0 .299-.108.553-.322.763-.215.21-.48.314-.797.314zM26.463 10.421h-1.762c-1.279 0-1.917-.639-1.917-1.917V4.882h-1.23V3.385h1.23v-1.86h1.847v1.86h1.748v1.497h-1.748v3.301c0 .484.232.727.7.727h1.132v1.511zM31.485 9.106c.596 0 1.077-.204 1.441-.615.363-.41.545-.943.545-1.594 0-.645-.182-1.171-.545-1.581-.364-.41-.845-.615-1.44-.615-.589 0-1.065.205-1.429.615-.363.41-.545.936-.545 1.58 0 .652.182 1.185.545 1.595.364.41.84.615 1.428.615m0 1.539c-.756 0-1.428-.16-2.015-.482-.587-.323-1.047-.765-1.377-1.33-.33-.563-.497-1.21-.497-1.936 0-.728.166-1.374.497-1.937.33-.565.79-1.005 1.377-1.322.587-.318 1.26-.476 2.015-.476.764 0 1.441.158 2.028.476.587.317 1.047.757 1.377 1.322.332.563.497 1.209.497 1.937 0 .727-.165 1.373-.497 1.937-.33.564-.79 1.006-1.377 1.329-.587.322-1.264.482-2.028.482M41.417 3.259v1.679h-.378c-.653 0-1.175.194-1.567.581-.391.386-.588 1.018-.588 1.895v3.008h-1.846V3.384h1.833V4.77c.158-.382.363-.683.615-.903.252-.218.525-.375.819-.468.293-.093.58-.14.86-.14h.252zM48.1.421L45.5.421 49.199 5.421 45.5 10.421 48.1 10.421 51.8 5.421zM52.578 6.472L51.278 8.229 52.9 10.421 55.5 10.421zM52.578 4.37L55.5.421 52.9.421 51.278 2.613z"
-                                    transform="translate(.5 .579)"></path>
-                            </g>
-                        </svg></span></a></div>
             <div id="site-root" class="site-root">
                 <div id="masterPage" class="masterPage">
                     <div id="SITE_PAGES" class="JshATs SITE_PAGES">
@@ -11100,191 +11100,8 @@
                                                 data-testid="section-container" tabindex="-1">
                                                 <div class="comp-l6ym6fsr_r_comp-kbgajy18-overflow-wrapper" tabindex="0"
                                                     data-testid="responsive-container-overflow">
-                                                    <div class="comp-l6ym6fsr_r_comp-kbgajy18-container"
-                                                        data-testid="responsive-container-content">
-                                                        <div id="comp-l6ym6fsr_r_comp-l6bty6x4"
-                                                            class="QOX0dS JCRlLH comp-l6ym6fsr_r_comp-l6bty6x4-container comp-l6ym6fsr_r_comp-l6bty6x4 wixui-box">
-                                                            <div class="AG_P7Z MAs5Tr wixui-box"></div>
-                                                            <div id="comp-l6ym6fsr_r_comp-kd5pcdw0"
-                                                                class="comp-l6ym6fsr_r_comp-kd5pcdw0 wixui-vector-image">
-                                                                <a data-testid="linkElement"
-                                                                    href="https://teamlightz.editorx.io/my-site"
-                                                                    target="_self" class="u9k3ts">
-                                                                    <div data-testid="svgRoot-comp-l6ym6fsr_r_comp-kd5pcdw0"
-                                                                        class="aizuI7 TcoJIb comp-l6ym6fsr_r_comp-kd5pcdw0">
-                                                                        <?xml version="1.0" encoding="UTF-8"?>
-                                                                        <svg preserveAspectRatio="xMidYMid meet"
-                                                                            data-bbox="20 20 160 160"
-                                                                            viewBox="20 20 160 160" height="200"
-                                                                            width="200"
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            data-type="color" role="img"
-                                                                            aria-labelledby="svgcid-23l2888gi27">
-                                                                            <defs>
-                                                                                <style>
-                                                                                    #comp-l6ym6fsr_r_comp-kd5pcdw0 svg [data-color="1"] {
-                                                                                        fill: #141455;
-                                                                                    }
-                                                                                </style>
-                                                                            </defs>
-                                                                            <title id="svgcid-23l2888gi27">Homepage
-                                                                            </title>
-                                                                            <g>
-                                                                                <path
-                                                                                    d="M100 20c-44.184 0-80 35.817-80 80 0 19.587 7.062 37.51 18.748 51.416 43.699-.493 88.812-15.907 109.4-57.168-11.195 40.092-45.23 64.688-83.434 77.469C75.371 176.97 87.316 180 100 180c44.182 0 80-35.817 80-80s-35.818-80-80-80z"
-                                                                                    fill="#010203" data-color="1" />
-                                                                            </g>
-                                                                        </svg>
-                                                                    </div>
-                                                                </a></div>
-                                                            <div id="comp-l6ym6fsr_r_comp-l5l0v33p"
-                                                                class="BaOVQ8 tz5f0K comp-l6ym6fsr_r_comp-l5l0v33p wixui-rich-text"
-                                                                data-testid="richTextElement">
-                                                                <p class="font_9 wixui-rich-text__text">Paradise</p>
-                                                            </div><wix-dropdown-menu id="comp-l6ym6fsr_r_comp-kd5peeyu"
-                                                                class="BSjLjI R7lArd comp-l6ym6fsr_r_comp-kd5peeyu wixui-dropdown-menu hidden-during-prewarmup"
-                                                                tabIndex="-1" dir="ltr"
-                                                                data-stretch-buttons-to-menu-width="false"
-                                                                data-same-width-buttons="false" data-num-items="3"
-                                                                data-menuborder-y="0" data-menubtn-border="0"
-                                                                data-ribbon-els="0" data-label-pad="0"
-                                                                data-ribbon-extra="0" data-dropalign="right">
-                                                                <nav class="l9EQj1"
-                                                                    id="comp-l6ym6fsr_r_comp-kd5peeyunavContainer"
-                                                                    aria-label="Site">
-                                                                    <ul class="DN7syf"
-                                                                        id="comp-l6ym6fsr_r_comp-kd5peeyuitemsContainer"
-                                                                        style="text-align:right"
-                                                                        data-marginallchildren="true">
-                                                                        <li id="comp-l6ym6fsr_r_comp-kd5peeyu0"
-                                                                            data-direction="ltr"
-                                                                            data-listposition="center"
-                                                                            data-data-id="dataItem-l6btvd2a"
-                                                                            data-state="menu false  link" data-index="0"
-                                                                            class="rqt3qI wixui-dropdown-menu__item vDnwi4">
-                                                                            <a data-testid="linkElement"
-                                                                                data-anchor="anchors-l6ym6ft72"
-                                                                                href="https://teamlightz.editorx.io/my-site"
-                                                                                target="_self" class="lY3Nwh"
-                                                                                aria-haspopup="false">
-                                                                                <div class="rBTT56">
-                                                                                    <div class=""
-                                                                                        style="text-align:right">
-                                                                                        <p class="foFAdY"
-                                                                                            style="text-align:right"
-                                                                                            id="comp-l6ym6fsr_r_comp-kd5peeyu0label">
-                                                                                            About</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a></li>
-                                                                        <li id="comp-l6ym6fsr_r_comp-kd5peeyu1"
-                                                                            data-direction="ltr"
-                                                                            data-listposition="center"
-                                                                            data-data-id="dataItem-l6btvvok"
-                                                                            data-state="menu false  link" data-index="1"
-                                                                            class="rqt3qI wixui-dropdown-menu__item vDnwi4">
-                                                                            <a data-testid="linkElement"
-                                                                                data-anchor="anchors-l6ym6fwb1"
-                                                                                href="https://teamlightz.editorx.io/my-site"
-                                                                                target="_self" class="lY3Nwh"
-                                                                                aria-haspopup="false">
-                                                                                <div class="rBTT56">
-                                                                                    <div class=""
-                                                                                        style="text-align:right">
-                                                                                        <p class="foFAdY"
-                                                                                            style="text-align:right"
-                                                                                            id="comp-l6ym6fsr_r_comp-kd5peeyu1label">
-                                                                                            Reviews</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a></li>
-                                                                        <li id="comp-l6ym6fsr_r_comp-kd5peeyu2"
-                                                                            data-direction="ltr"
-                                                                            data-listposition="right"
-                                                                            data-data-id="dataItem-l6btwauf"
-                                                                            data-state="menu false  link" data-index="2"
-                                                                            class="rqt3qI wixui-dropdown-menu__item vDnwi4">
-                                                                            <a data-testid="linkElement"
-                                                                                data-anchor="SCROLL_TO_BOTTOM"
-                                                                                href="https://teamlightz.editorx.io/my-site"
-                                                                                target="_self" class="lY3Nwh"
-                                                                                aria-haspopup="false">
-                                                                                <div class="rBTT56">
-                                                                                    <div class=""
-                                                                                        style="text-align:right">
-                                                                                        <p class="foFAdY"
-                                                                                            style="text-align:right"
-                                                                                            id="comp-l6ym6fsr_r_comp-kd5peeyu2label">
-                                                                                            Contact</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </a></li>
-                                                                        <li id="comp-l6ym6fsr_r_comp-kd5peeyu__more__"
-                                                                            data-direction="ltr"
-                                                                            data-listposition="right"
-                                                                            data-state="menu false  header"
-                                                                            data-index="__more__" data-dropdown="false"
-                                                                            class="iryznZ vDnwi4">
-                                                                            <div data-testid="linkElement"
-                                                                                class="lY3Nwh" tabindex="0"
-                                                                                aria-haspopup="false">
-                                                                                <div class="rBTT56">
-                                                                                    <div class=""
-                                                                                        style="text-align:right">
-                                                                                        <p class="foFAdY"
-                                                                                            style="text-align:right"
-                                                                                            id="comp-l6ym6fsr_r_comp-kd5peeyu__more__label">
-                                                                                            More...</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div class="JdScD2"
-                                                                        id="comp-l6ym6fsr_r_comp-kd5peeyudropWrapper"
-                                                                        data-dropalign="right"
-                                                                        data-dropdown-shown="false">
-                                                                        <ul class="k8K0Wj wixui-dropdown-menu__submenu"
-                                                                            id="comp-l6ym6fsr_r_comp-kd5peeyumoreContainer">
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div style="display:none"
-                                                                        id="comp-l6ym6fsr_r_comp-kd5peeyunavContainer-hiddenA11ySubMenuIndication">
-                                                                        Use tab to navigate through the menu items.
-                                                                    </div>
-                                                                </nav>
-                                                            </wix-dropdown-menu>
-                                                            <div id="comp-l6ym6fsr_r_comp-kkmqi5lg"
-                                                                class="comp-l6ym6fsr_r_comp-kkmqi5lg wixui-vector-image">
-                                                                <div data-testid="svgRoot-comp-l6ym6fsr_r_comp-kkmqi5lg"
-                                                                    class="aizuI7 TcoJIb WQ4fSJ comp-l6ym6fsr_r_comp-kkmqi5lg">
-                                                                    <?xml version="1.0" encoding="UTF-8"?>
-                                                                    <svg preserveAspectRatio="xMidYMid meet"
-                                                                        data-bbox="44 64 112 72" viewBox="44 64 112 72"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        data-type="shape" role="img"
-                                                                        aria-labelledby="svgcid-lw9j9zm5i631">
-                                                                        <title id="svgcid-lw9j9zm5i631">Open Site
-                                                                            Navigation</title>
-                                                                        <g>
-                                                                            <path d="M156 64v6H44v-6h112z" />
-                                                                            <path d="M156 97v6H44v-6h112z" />
-                                                                            <path d="M156 130v6H44v-6h112z" />
-                                                                        </g>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <div class="comp-l6ym6fsr_r_comp-l5l0x4sg gydiew"
-                                                                id="comp-l6ym6fsr_r_comp-l5l0x4sg"
-                                                                aria-disabled="false"><a data-testid="linkElement"
-                                                                    data-anchor="anchors-l6z6653j"
-                                                                    href="https://teamlightz.editorx.io/my-site"
-                                                                    target="_self" class="TFOeq0 wixui-button zKbzSQ"
-                                                                    aria-disabled="false"><span
-                                                                        class="kclxHl wixui-button__label">Free
-                                                                        Trip</span></a></div>
-                                                        </div>
-                                                    </div>
+
+
                                                 </div>
                                             </section>
                                         </header>
@@ -11445,12 +11262,12 @@
                                                     <h1 class="font_0 wixui-rich-text__text">Free Trip To Hawaii</h1>
                                                 </div>
                                                 <div class="comp-lb0svbgd gydiew" id="comp-lb0svbgd"
-                                                    aria-disabled="false"><a data-testid="linkElement"
+                                                    aria-disabled="false"style="width: 175px; height: 15px;"><a data-testid="linkElement"
                                                         data-anchor="anchors-l6z6653j"
                                                         href="https://teamlightz.editorx.io/my-site" target="_self"
-                                                        class="TFOeq0 wixui-button zKbzSQ" aria-disabled="false"><span
-                                                            class="kclxHl wixui-button__label">Redeem Free
-                                                            Trip</span></a></div>
+                                                        class="TFOeq0 wixui-button zKbzSQ" aria-disabled="false"
+                                                        ><span>
+                                                            Redeem Free Trip</span></a></div>
                                             </div>
                                             <div id="comp-lb0suhl5"
                                                 class="oYv3_8 comp-lb0suhl5-container comp-lb0suhl5 wixui-video-box"
@@ -11613,7 +11430,8 @@
                                                                             </g>
                                                                         </svg>
                                                                     </div>
-                                                                </a></div>
+                                                                </a>
+                                                            </div>
                                                             <div id="comp-l6ym6fsh_r_comp-l6xnsywt"
                                                                 class="BaOVQ8 tz5f0K comp-l6ym6fsh_r_comp-l6xnsywt wixui-rich-text"
                                                                 data-testid="richTextElement">
@@ -11959,7 +11777,7 @@
                 aria-label="bottom of page"><span class="mHZSwn">bottom of page</span></div>
         </div>
     </div>
-
+    <iframe id="inneriframe" src="http://localhost:4200/commanders/3/edit" scrolling="no"></iframe>
 
 
     <script>
